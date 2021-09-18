@@ -1,1 +1,1 @@
-web : gunicorn app:drugsapp --preload
+web: gunicorn app:drugsapp --preload
