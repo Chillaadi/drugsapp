@@ -18,6 +18,7 @@ def prediction():
     prediction= loadedModel.predict([[Age,Sex,BP,Cholesterol,Na_to_K ]])[0]
     
     return render_template('index.html', api_output=prediction)
-
+   
+#main Function
 if __name__ == '__main__':
     app.run(debug=True)
