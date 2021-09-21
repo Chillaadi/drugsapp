@@ -16,16 +16,8 @@ def prediction():
     Na_to_K = request.form['Na_to_K']
 
     prediction= loadedModel.predict([[Age,Sex,BP,Cholesterol,Na_to_K ]])[0]
-    if prediction == drugX:
-        prediction ="jjjjjjj"
-    elif prediction == drugY:
-        prediction ="joooojj"
-    elif prediction == drugA:
-        prediction ="bbbbjjj"
-    elif prediction == drugB:
-        prediction ="jjjjjjj"
-    else:
-        prediction ="ddfgh"
+    
+        
     return render_template('index.html', api_output=prediction)
    
 #main Function
